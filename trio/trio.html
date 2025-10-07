@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="trio.css">
+    <script src="trio.js" defer></script>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono&display=swap" rel="stylesheet">
+    <title>Trio Security</title>
+</head>
+<body>
+    <!--Screen covers the entire page.-->
+    <div id="screen">
+        <!--Container is the center content.-->
+        <div id="container">
+            <img id="logo" src="assets/trio/trio_logo.svg" alt="Logo">
+            <!--Blurb is a flexbox containing the text instructions and header.-->
+            <div id="blurb">
+                <h1>Enter your verification code</h1>
+                <p class="body-text"> We emailed a code to your ex-husband.
+                Please ask him for it and verify it's
+                you by entering it here.</p>
+            </div>
+            <form id="form" autocomplete="off" name="trio-form" method="POST" action="/trio.asp"> 
+                <div id="input">
+                    <label for="code"><h2>Verification Code</h2></label>
+                    <input type="text" name="code" id="code" placeholder="------" maxlength="6" required autofocus>
+                    <button type="submit" id="submit" disabled><span class="button-text">Verify</span></button>
+                </div>
+                <div class="body-text">
+                    <p><b>Having trouble?</b>
+                     Enter any code to continue. We will perform additional
+                     verification steps to make sure it's you.</p>
+                </div>
+            </form>
+            <div id="footer">
+                <p class="fine-print">Trio is not affiliated with Duo Security,
+                    nor endosed by Cisco Systemc, Inc.
+                    Trio is not a legitimate security product.
+                </p>
+                <p id="footer-brand-tag">Secured by Trio</p>
+        </div>
+    </div>
+</body>
+</html>
