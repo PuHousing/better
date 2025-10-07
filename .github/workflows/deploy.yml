@@ -17,5 +17,5 @@ jobs:
           script: |
             mkdir test
             cd test
-            git clone git@github.com:PuHousing/better.git
+            gh repo clone PuHousing/better
             echo 'Deployment successful to DigitalOcean'
