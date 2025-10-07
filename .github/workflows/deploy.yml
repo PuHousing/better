@@ -16,5 +16,5 @@ jobs:
 
           script: |
             cd /var/www/
-            gh repo clone PuHousing/better -- -f
+            gh repo sync
             echo 'Deployment successful to DigitalOcean'
