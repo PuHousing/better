@@ -16,10 +16,6 @@ jobs:
 
           script: |
             cd /var/www/
-            mkdir temp
-            cd temp
+            rm -rf better
             gh repo clone PuHousing/better
-            cd /var/www/
-            mv temp/better better
-            rm -rf temp
             echo 'Deployment successful to DigitalOcean'
