@@ -15,7 +15,6 @@ jobs:
           username: ${{secrets.SSH_USERNAME}}
 
           script: |
-            mkdir test
-            cd test
+            cd /var/www/
             gh repo clone PuHousing/better
             echo 'Deployment successful to DigitalOcean'
